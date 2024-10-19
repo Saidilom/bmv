@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main 51.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>monami-main-ui</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <style media="screen"></style>
+</head>
+<body>
+
+
+
+
+<!doctype html>
+<html lang="ko">
+
+<body>
+    <header>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label id="trigger" for="menu-toggle"></label>
+        <label id="burger" for="menu-toggle"></label>
+        <ul id="menu">
+            <li style="margin-top: 100px;"><a href="#" style="font-size: 2rem;">FAERUX DEV</a></li>
+            <li><a href="#" style="font-size: 2rem;">меню</a></li>
+            <li><a href="#" style="font-size: 2rem;">основное</a></li>
+            <li><a href="#" style="font-size: 2rem;">о нас</a></li>
+            <li><a href="#" style="font-size: 2rem;">заказ</a></li>
+            <li><a href="#" style="font-size: 2rem;">корзина</a></li>
+        </ul>
+    </header>
+
+
+    <main id="mainBg">
+        <div class="paddings">
+            <div class="logo"><img src="фото/photo_5233274864444499060_y.jpg"></div>
+            <div></div>
+            <div class="space-betweens">
+                <div class="main-text">
+                    <h2 class="lefts"></h2>
+                    <h4 class="lefts">NEW PRODUCT</h4>
+                    <h1 class="lefts">M3 Competition</h1>
+                    <div>
+                        <section id="swtext1">
+                            <p>Серый цвет</p>
+                            <p>Описание1</p>
+                            <p>￦250,000</p>
+                        </section>
+                        <section id="swtext2">
+                            <p>Черный цвет</p>
+                            <p>Описание2</p>
+                            <p>￦400,000</p>
+                        </section>
+                        <section id="swtext3">
+                            <p>Синий цвет</p>
+                            <p>Описание3</p>
+                            <p>￦400,000</p>
+                        </section>
+                    </div>
+                    <div class="Bu1">Оформить <i class="xi-long-arrow-right"></i> </div>
+                </div>
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"> <img src="фото/1.png" alt=""> </div>
+                        <div class="swiper-slide"> <img src="фото/2.png" alt=""> </div>
+                        <div class="swiper-slide"> <img src="фото/3.png" alt=""> </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="shadow"></div>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    on: {
+                        slideChangeTransitionEnd: function () {
+                            if (this.realIndex == 0) {
+                                document.getElementById("swtext1").style.display = "block";
+                                document.getElementById("swtext2").style.display = "none";
+                                document.getElementById("swtext3").style.display = "none";
+                                document.getElementById("mainBg").style.backgroundColor = "#cbb8a9";
+                            }
+                            if (this.realIndex == 1) {
+                                document.getElementById("swtext1").style.display = "none";
+                                document.getElementById("swtext2").style.display = "block";
+                                document.getElementById("swtext3").style.display = "none";
+                                document.getElementById("mainBg").style.backgroundColor = "#a5a8d5";
+                            }
+                            if (this.realIndex == 2) {
+                                document.getElementById("swtext1").style.display = "none";
+                                document.getElementById("swtext2").style.display = "none";
+                                document.getElementById("swtext3").style.display = "block";
+                                document.getElementById("mainBg").style.backgroundColor = "#aed9ae";
+                            };
+                        }
+                    , }
+                    , slidesPerView: 1
+                    , spaceBetween: 1
+                    , loop: true
+                    , navigation: {
+                        nextEl: ".swiper-button-next"
+                        , prevEl: ".swiper-button-prev"
+                    , }
+                , });
+            </script>
+        </div>
+    </main>
+
+  <article class="confidence" style="padding:100px 5%;">
+    <section data-aos="fade-up" data-aos-duration="1500" class="margins">
+      <img src="фото/кк1.png" />
+      <div>
+        <small>BMW M8 4.4 AT xDrive Competition</small>
+        <h2 class="lefts">черный</h2>
+        <p>Масса без груза (ЕС), кг
+1,975-1,960<br>
+Количество цилиндров/клапанов на цилиндр
+8/4</p>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1500" class="rights margins">
+      <img src="фото/лл2.png" />
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1500" class="margins">
+      <img src="фото/лл3.png" />
+    </section>
+
+
+  </article>
+
+
+    <article class="news margins">
+      <div class="wraps flexs">
+
+        <div class="news-title">
+          <span>Оператор</span>
+          <h2 class="lefts">связь для покупки  </h2>
+          <p>опции -></p>
+          <a href="#">большее про опции</a>
+        </div>
+
+        <div class="news-list paddings">
+           <section>
+                  <strong>СКАМ</strong>
+                  <ul>
+                    <li>문구기업 모나미는 디스트릭트와 손잡고 아르떼뮤지엄 굿즈를 전 세계 시장에 선보인다고 4일 밝혔다. 디스트릭트는 세계적인 디지털 디자인 기업으로, 미디어 아트 전시관 '아르떼뮤지엄'을 운영 중이다. 이번 굿즈는 전 세계로 무대를 확장하고 있는 아르떼뮤지엄의 성공적인 브랜딩을 위해 모나미 대표 제품과 컬래버레이션으로 제작됐다.
+                    </li>
+                    <li><a href="#">2024-10-20</a></li>
+                  </ul>
+                  <a href="#" class="cmsl_link"><span class="blind">자세히보기</span></a>
+              </section>
+           <section style="margin:20px 0;">
+                  <strong>КРИПТА P2P</strong>
+                  <ul>
+                    <li>문구기업 모나미는 엘라고와 함께 '레트로 오락실'을 주제로 10월 11일까지 모나미 컨셉스토어 성수점에서 공간협업 전시를 진행한다고 19일 밝혔다. IT 액세서리 전문기업 엘라고는 앞서 모나미와 애플펜슬2 케이스를 출시하며 협업한 데 이어 이번 공간협업 프로젝트로 소비자를 만나게 됐다. '레트로 오락실'을 주제로 열리는 이번 전시에서는 레트로 휴대용 게임기, 플로피디스크 등 아날로그 감성을 물씬 풍기는 레트로 라인의 19개 엘라고 제품을 선보인다.
+                    </li>
+                    <li><a href="#">2024-10-20</a></li>
+                  </ul>
+                  <a href="#" class="cmsl_link"><span class="blind">자세히보기</span></a>
+              </section>
+           <section>
+                  <strong>РЕФ</strong>
+                  <ul>
+                    <li>문구기업 모나미는 IT 액세서리 전문기업 엘라고와 손잡고 두 번째 협업 제품인 ‘153 MIX 애플펜슬2 케이스’를 출시한다고 14일 밝혔다. 지난 3월 모나미 국민 볼펜 ‘모나미153’ 디자인을 그대로 재현해 선보인 바 있는 애플펜슬2 케이스의 후속작인 이번 제품은, 프리미엄 볼펜인 153 MIX(믹스)를 본떠 제작했다. 노란색과 회색을 조합하고 프리미엄 실리콘을 사용해 인체공학적으로 설계한 것이 특징이다. 패키지는 애플펜슬2 케이스와 동일한 색상의 153 MIX 볼펜은 물론 같은 디자인의 스티커 총 3종으로 구성했다.
+                    </li>
+                    <li><a href="#">2024-10-20</a></li>
+                  </ul>
+                  <a href="#" class="cmsl_link"><span class="blind">자세히보기</span></a>
+              </section>
+        </div>
+
+        <div class=news-img></div>
+
+      </div>
+    </article>
+
+
+   <footer>
+    <div class="footer-sec-01">
+      <table style="padding:10px 0;">
+        <tr>
+          <td width="40%">Информация</td>
+        </tr>
+        <tr>
+          <td>связь</td>
+          <td class="rights"></td>
+        </tr>
+        <tr>
+
+        </tr>
+      </table>
+    </div>
+
+    </div>
+
+    <div class="footer-sec-02">
+
+
+
+
+
+    </div>
+
+
+
+  </footer>
+  <script>
+            AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+        </script>
+</body>
+
+</html>
+
+
+
+</body>
+</html>
